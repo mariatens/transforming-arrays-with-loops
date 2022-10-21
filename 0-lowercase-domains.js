@@ -17,5 +17,22 @@ return resultArray
 
 
 // test cases
-console.log(lowerArray(["Google.com", "tWitTer.com"]), "should expect ['google.com', 'twitter.com]")
-console.log(lowerArray(["mypersoNal@Email.cOm"]), "should expect ['mypersonal@email.com']")
+console.log(
+        lowerArray(["Google.com", "tWitTer.com"]), 
+        "should expect ['google.com', 'twitter.com]"
+)
+
+console.log(
+        lowerArray(["mypersoNal@Email.cOm"]), 
+        "should expect ['mypersonal@email.com']"
+)
+
+console.log(
+	lowercaseDomains(["academy.tech", "GITHUB.COM", "StackOverflow.com", "mOzIlLa.OrG"]),
+	["academy.tech", "github.com", "stackoverflow.com", "mozilla.org"]
+)
+
+console.log(
+	lowercaseDomains(["m1a.tech", "example.cO.UK", "HTTPS://JavaScript.Info"]),
+	["m1a.tech", "example.co.uk", "https://javascript.info"]
+)
