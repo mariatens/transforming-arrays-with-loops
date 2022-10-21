@@ -13,3 +13,9 @@ for each item of array
 end for 
 return resultArray
 */
+
+
+
+// test cases
+console.log(lowerArray(["Google.com", "tWitTer.com"]), "should expect ['google.com', 'twitter.com]")
+console.log(lowerArray(["mypersoNal@Email.cOm"]), "should expect ['mypersonal@email.com']")
