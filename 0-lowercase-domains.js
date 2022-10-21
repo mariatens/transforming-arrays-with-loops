@@ -18,7 +18,7 @@ return resultArray
 
 function lowerArray(arr){
     let resultArray = []
-    for (item of arr){
+    for (let item of arr){
         let lowItem  = item.toLowerCase()
         resultArray.push(lowItem)
     }
