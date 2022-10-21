@@ -10,8 +10,9 @@ function greet(nameArr){
         let greeting = `Hello, ${fName}`
         greetArr.push(greeting)
     }
-    return 
+    return greetArr
 }
 
-console.log(["Ash", "Beth", "Ciara"],
+// test cases
+console.log(greet(["Ash", "Beth", "Ciara"]),
         ["Hello, Ash!", "Hello, Beth!", "Hello, Ciara!"])
