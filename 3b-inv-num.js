@@ -11,3 +11,16 @@ function invNum(arr){
 
 //test case
 console.log(invNum([1, -3, 2, 8, -10]),[-1, 3, -2, -8, 10])
+
+// using map
+//transforming function 
+function inv(num){
+    return num * -1
+}
+//passing map
+function invArr(arr){
+    return arr.map(inv)
+}
+
+//test case
+console.log(invNum([1, -3, 2, 8, -10]),[-1, 3, -2, -8, 10])
