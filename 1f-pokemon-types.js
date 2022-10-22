@@ -2,10 +2,12 @@
 
 
 function descPokemon(arr){
+    let newArr = []
     for (obj of arr){
-        let sent = `${obj.name} is a ${obj.type} Pokémon`
+            let sent = obj.name + " is a " + obj.type.toLowerCase() + " Pokémon."
+            newArr.push(sent)
     }
-    return sent
+    return newArr
 }
 
 // test case
