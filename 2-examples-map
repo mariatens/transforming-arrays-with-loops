@@ -39,3 +39,14 @@ function areYumArr(arr){
 console.log(areYumArr(["apples", "bananas", "carrots"]))
 
 //[{ n: 10, subtract: 1 }, { n: 10, subtract: 2 }, { n: 100, subtract: 99 }] -> [9, 8, 1]
+
+//transforming function
+function sub(obj){
+    return obj.n - obj.subtract
+}
+//passing to map
+function subArr(objArr){
+    return objArr.map(sub)
+}
+console.log(subArr([{ n: 10, subtract: 1 }, { n: 10, subtract: 2 }, { n: 100, subtract: 99 }] ))
+
