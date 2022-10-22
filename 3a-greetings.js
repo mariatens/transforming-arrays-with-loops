@@ -16,3 +16,16 @@ function greet(nameArr){
 // test cases
 console.log(greet(["Ash", "Beth", "Ciara"]),
         ["Hello, Ash!", "Hello, Beth!", "Hello, Ciara!"])
+
+// using map 
+// transforming function 
+function hello(name){
+    return "Hello, " + name
+}        
+//passing to map 
+function helloArr(arr){
+    return arr.map(hello)
+}
+
+//test case 
+console.log(helloArr(["Ash", "Beth", "Ciara"]))
