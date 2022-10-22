@@ -1,0 +1,29 @@
+// [1, 2, 3] -> [2, 4, 6]
+
+// normal for loop
+function double(arr){
+    let doubArr = []
+    for (let num of arr){
+        let doubNum = num * 2
+        doubArr.push(doubNum)
+        console.log(doubNum)
+        console.log(doubArr)
+    }
+    return doubArr
+}
+
+console.log(double([1,2,3], [2,4,6]))
+
+// transformation function 
+function double(num){
+    return num*2
+}
+// passing the transformation function to array's map
+function doubArray(numArr){
+    return numArr.map(double)
+}
+
+console.log(doubArray([1,2,3]))
+
+//["apples", "bananas", "carrots"] -> ["apples are yum", "banans are yum", "carrots are yum"]
+//[{ n: 10, subtract: 1 }, { n: 10, subtract: 2 }, { n: 100, subtract: 99 }] -> [9, 8, 1]
