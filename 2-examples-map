@@ -26,4 +26,16 @@ function doubArray(numArr){
 console.log(doubArray([1,2,3]))
 
 //["apples", "bananas", "carrots"] -> ["apples are yum", "banans are yum", "carrots are yum"]
+
+//transforming function 
+function areYum(str){
+    return str + " are yum"
+}
+//passing to map 
+function areYumArr(arr){
+    return arr.map(areYum)
+}
+
+console.log(areYumArr(["apples", "bananas", "carrots"]))
+
 //[{ n: 10, subtract: 1 }, { n: 10, subtract: 2 }, { n: 100, subtract: 99 }] -> [9, 8, 1]
