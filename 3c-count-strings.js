@@ -11,3 +11,16 @@ function countStr(strArr){
 
 // test case
 console.log(countStr(["one", "two", "three", "four"]),[3, 3, 5, 4])
+
+// using map
+//transforming function 
+function count(str){
+    return str.length
+    }
+
+//passing map
+function countAr(arr){
+    return arr.map(count)
+}
+//test case
+console.log(countStr(["one", "two", "three", "four"]),[3, 3, 5, 4])
